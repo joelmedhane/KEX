@@ -1,17 +1,7 @@
 from numpy import *
 import os
 import time
-#os.system('grep L: log1|grep "rank: 0"|grep -v dual|cut -d " " -f 15 > L.txt')
-#os.system('grep D: log1|grep "rank: 0"|grep -v dual|cut -d " " -f 17 > D.txt')
-#os.system('grep L: log1.53|grep "rank: 0"|cut -d " " -f 15 > L.53.txt')
-#os.system('grep D: log1.53|grep "rank: 0"|cut -d " " -f 17 > D.53.txt')
 
-#os.system('sshpass -p "Ackpos14" rsync -avPz digimat@192.168.1.63:02/iter_0/{log1,*.txt} .')
-
-#exparr = loadtxt("forces_moments_corrected_40_37.dat")
-#exparr02 = loadtxt("forces_moments_uncorrected_40_37.dat")
-#print(exparr[:, 0])
-#print(interp(10.0, exparr[:, 0], exparr[:, 1]))
 
 
 os.system("uniq t.txt > tmp.txt ; cp tmp.txt t.txt")
@@ -80,7 +70,7 @@ print("L:", L)
 print("D:", D)
 print("M:", MP)
 
-A = 297360.*1e-6
+A = 0.9144 * 0.6010
 C = 275.8*1e-3
 
 CL = 2*L/A
