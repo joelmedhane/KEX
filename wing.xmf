@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2003/XInclude" Version="2.2">
+  <Domain>
+    <Grid GridType="Uniform">
+      <Topology TopologyType="Tetrahedron" Dimensions="29380">
+        <DataItem Dimensions="29380 4" NumberType="Int" Precision="8" Format="HDF">wing.h5:/Topology_Block_0</DataItem>
+      </Topology>
+      <Geometry GeometryType="XYZ">
+        <DataItem Dimensions="6022 3" NumberType="Float" Precision="4" Format="HDF">wing.h5:/Geometry_Block_0/Points</DataItem>
+      </Geometry>
+    </Grid>
+  </Domain>
+</Xdmf>
