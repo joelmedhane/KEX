@@ -80,6 +80,10 @@ CM = 2*MP/(A*C)
 
 print("CL:", CL, "CD:", CD, "CM:", CM, "L/D:", L/D)
 
+with open("coefficients.txt", "a") as f:
+    f.write(f"CL: {CL} CD: {CD} CM: {CM} L/D: {L/D}\n")
+
+
 import matplotlib
 matplotlib.use('Agg')
 
